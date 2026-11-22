@@ -135,3 +135,7 @@ html, body { overflow-x: hidden; }
   .dl-btn { width: 100%; }
   .tagline { display: none; }
 }
+
+/* rules page */
+.profile.single { grid-template-columns: minmax(0, 1fr); max-width: 760px; margin: 26px auto; }
+.feat.plain li { padding-left: 4px; list-style: disc inside; }
