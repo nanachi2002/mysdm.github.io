@@ -1,0 +1,4 @@
+Emoticon images: Fugue Icons (C) 2013 Yusuke Kamiyamane. All rights reserved.
+Licensed under a Creative Commons Attribution 3.0 License: https://creativecommons.org/licenses/by/3.0/
+https://p.yusukekamiyamane.com/  (32x32 versions: https://github.com/chrisjbillington/fugue-2x-icons)
+MyDSM uses the images unmodified; the shortcut codes and names are MyDSM's.

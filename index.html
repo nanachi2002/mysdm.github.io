@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyDSM - your messenger and your page</title>
+<meta name="description" content="MyDSM is a free desktop messenger with the look and feel of the late 2000s: buddy lists, nudges, winks, emoticons, group chats and your own customisable profile page.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<script src="emoticons.js" defer></script>
+<script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="" width="34" height="34"><span>My<b>DSM</b></span></a>
+    <span class="tagline">a place for friends... and chats</span>
+    <nav class="nav">
+      <a href="#top">Home</a><span>|</span><a href="#download">Download</a><span>|</span><a href="#features">Features</a><span>|</span><a href="#emoticons">Emoticons</a><span>|</span><a href="#privacy">Privacy</a><span>|</span><a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- hero: a glass "sign in" window with the download button -->
+  <section class="hero">
+    <div class="glasswin hero-win" id="download">
+      <div class="gw-title"><img src="favicon.png" alt="" width="16" height="16"> MyDSM <span class="gw-btns"><i></i><i></i><i class="x"></i></span></div>
+      <div class="gw-body">
+        <h1>Chat like it's <span class="hl">2006</span> again.</h1>
+        <p class="lead">Buddy lists that glow green, nudges that shake the window, winks, a ton of emoticons, group chats, and your very own profile page with glitter-level customisation. Free, no ads, made with love.</p>
+        <a class="dl-btn" id="dl" href="https://api.milorp.app/updates/MyDSM-setup.exe">
+          <span class="dl-ico" aria-hidden="true"></span>
+          <span><b>Download MyDSM</b><small id="dl-meta">for Windows 10 and 11 &middot; free</small></span>
+        </a>
+        <p class="small muted">MyDSM keeps itself up to date: you download it once, and new versions arrive inside the app with a little notification.</p>
+        <p class="small muted">The installer is not code-signed yet, so Windows may say "unknown publisher". Click <b>More info</b>, then <b>Run anyway</b>.</p>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="img/contact-list.png" alt="The MyDSM contact list: friends grouped as online and offline, with personal messages and emoticons" width="310" height="640">
+    </div>
+  </section>
+
+  <!-- the rest of the page is MyDSM's own "profile" -->
+  <section class="profile">
+    <div class="pcol-left">
+      <div class="box">
+        <div class="box-body who">
+          <h2 class="bigname">MyDSM</h2>
+          <div class="quote">"your messenger and your page"</div>
+          <div class="whorow">
+            <div class="dpframe"><img src="img/logo.png" alt="" width="128" height="128"></div>
+            <div class="facts">
+              <div>Free software</div>
+              <div class="online"><img src="emo/smiley.png" alt="" width="16" height="16"> Online now!</div>
+              <div class="muted">Version<br><b id="ver">latest</b></div>
+            </div>
+          </div>
+          <div class="mood"><b>Mood:</b> nostalgic <img class="emo" src="emo/smiley-squint.png" alt="^_^" width="20" height="20"></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-head">Contacting MyDSM</div>
+        <div class="box-body contact">
+          <a href="#download"><img src="emo/present.png" alt="" width="20" height="20"> Download it</a>
+          <a href="#faq"><img src="emo/light-bulb.png" alt="" width="20" height="20"> Read the FAQ</a>
+          <a href="#features"><img src="emo/star.png" alt="" width="20" height="20"> See features</a>
+          <a href="#privacy"><img src="emo/key.png" alt="" width="20" height="20"> Privacy</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-head">MyDSM's details</div>
+        <div class="box-body">
+          <table class="itable">
+            <tr><th>Price</th><td>Free, forever</td></tr>
+            <tr><th>Ads</th><td>None. Not one.</td></tr>
+            <tr><th>Runs on</th><td>Windows 10 and 11</td></tr>
+            <tr><th>Size</th><td>About 4 MB</td></tr>
+            <tr><th>Updates</th><td>Automatic, inside the app</td></tr>
+            <tr><th>Sign in with</th><td>Your @username (no e-mail needed)</td></tr>
+            <tr><th>Made of</th><td>Rust, a sprinkle of web tech, and nostalgia</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcol-right">
+      <div class="box network"><div class="box-body">MyDSM is in your extended network <img class="emo" src="emo/smiley-wink.png" alt=";)" width="20" height="20"></div></div>
+
+      <div class="box">
+        <div class="box-head">MyDSM's blurbs</div>
+        <div class="box-body">
+          <h3>About me:</h3>
+          <p>I'm a messenger from the good old days, rebuilt for today. Remember coming home from school, signing in, and hearing that little chime when your friends came online? Changing your personal message to a song lyric? Spending an entire evening making your page look <i>just right</i>? That's me.</p>
+          <p>I live on your desktop, every chat gets its own window, and closing me just tucks me into the tray so you never miss a message.</p>
+          <h3>Who I'd like to meet:</h3>
+          <p>Anyone who misses buddy lists, glossy buttons and emoticons with personality. Your friends, your cousins, that group from summer camp. Bring everyone.</p>
+        </div>
+      </div>
+
+      <div class="box" id="features">
+        <div class="box-head">MyDSM's Friend Space <small>(top 8 features)</small></div>
+        <div class="box-body">
+          <div class="friends">
+            <figure><img src="img/chat.png" alt="A conversation window with emoticons" loading="lazy"><figcaption>One window per chat</figcaption></figure>
+            <figure><img src="img/profile.png" alt="A pink customised profile page with hearts" loading="lazy"><figcaption>Your own profile page</figcaption></figure>
+            <figure><img src="img/group.png" alt="A group conversation with three people" loading="lazy"><figcaption>Group chats (up to 10)</figcaption></figure>
+            <figure><img src="img/update.png" alt="The contact list showing an update banner" loading="lazy"><figcaption>Updates itself</figcaption></figure>
+          </div>
+          <ul class="feat">
+            <li><img src="emo/smiley-shock.png" alt="" width="20" height="20"> <b>Nudges</b> that actually shake the window</li>
+            <li><img src="emo/star.png" alt="" width="20" height="20"> <b>Winks</b>: hearts, confetti and rain across the screen</li>
+            <li><img src="emo/heart.png" alt="" width="20" height="20"> <b>Profile pages</b> with your colours, patterns, fonts, top 8 friends and a comment wall</li>
+            <li><img src="emo/smiley-sleep.png" alt="" width="20" height="20"> <b>Status</b>: Online, Busy, Away or Appear offline, with picture frames that change colour</li>
+            <li><img src="emo/camera.png" alt="" width="20" height="20"> <b>Send pictures and files</b>: pictures are compressed automatically (2 MB max)</li>
+            <li><img src="emo/music.png" alt="" width="20" height="20"> <b>"What's new"</b>: share posts, like what your friends share</li>
+            <li><img src="emo/smiley-grin.png" alt="" width="20" height="20"> <b>105 emoticons</b> with the shortcut codes you remember</li>
+            <li><img src="emo/bell.png" alt="" width="20" height="20"> <b>Sign-in chimes</b>, "is writing a message...", flashing windows</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box" id="emoticons">
+        <div class="box-head">MyDSM's emoticons <small>(hover one to see its code)</small></div>
+        <div class="box-body">
+          <div class="emotabs" id="emotabs"></div>
+          <div class="emogrid" id="emogrid"><noscript>Turn on scripts to browse the emoticons.</noscript></div>
+          <div class="emohint" id="emohint">Type the code in a chat, like <code>(L)</code> for a heart or <code>(Y)</code> for thumbs up.</div>
+        </div>
+      </div>
+
+      <div class="box" id="privacy">
+        <div class="box-head">MyDSM's privacy (the honest version)</div>
+        <div class="box-body">
+          <ul class="feat">
+            <li><img src="emo/key.png" alt="" width="20" height="20"> People find you by your <b>@username</b>. Your e-mail is never needed and never shown.</li>
+            <li><img src="emo/smiley-zipper.png" alt="" width="20" height="20"> Messages and files are <b>encrypted on the way and stored encrypted</b> on the server.</li>
+            <li><img src="emo/smiley-neutral.png" alt="" width="20" height="20"> They are <b>not end-to-end encrypted</b>: the server can read them, so moderators can act on reports and keep MyDSM safe. Opening a conversation requires a written reason and is always logged.</li>
+            <li><img src="emo/smiley-cool.png" alt="" width="20" height="20"> Your profile page is visible to your contacts only, unless you choose to open it to everyone.</li>
+            <li><img src="emo/smiley-nerd.png" alt="" width="20" height="20"> This website has no trackers, no cookies and no ads.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box" id="faq">
+        <div class="box-head">MyDSM's Friends Comments <small>(well... frequently asked questions)</small></div>
+        <div class="box-body">
+          <div class="cmt"><div class="cwho"><img src="emo/smiley-confuse.png" alt="" width="32" height="32"><span>Question</span></div><div class="cbody"><b>Is it really free?</b><br>Yes. No price, no ads, no premium plan.</div></div>
+          <div class="cmt"><div class="cwho"><img src="emo/smiley-confuse.png" alt="" width="32" height="32"><span>Question</span></div><div class="cbody"><b>How do I add my friends?</b><br>Click <b>Add</b> and type their @username, or use <b>Find people</b> to search by name. They get an invitation to accept.</div></div>
+          <div class="cmt"><div class="cwho"><img src="emo/smiley-confuse.png" alt="" width="32" height="32"><span>Question</span></div><div class="cbody"><b>Do I need to download new versions?</b><br>No. MyDSM checks for updates by itself and shows a notification. Click <b>Update now</b> and it installs and restarts on its own.</div></div>
+          <div class="cmt"><div class="cwho"><img src="emo/smiley-confuse.png" alt="" width="32" height="32"><span>Question</span></div><div class="cbody"><b>Windows says "unknown publisher". Is that bad?</b><br>It only means the installer is not code-signed yet (that costs money every year). Click <b>More info</b>, then <b>Run anyway</b>. Updates inside the app are signed and checked before they install.</div></div>
+          <div class="cmt"><div class="cwho"><img src="emo/smiley-confuse.png" alt="" width="32" height="32"><span>Question</span></div><div class="cbody"><b>Mac or Linux?</b><br>Not yet. Windows first.</div></div>
+          <div class="cmt"><div class="cwho"><img src="emo/smiley-confuse.png" alt="" width="32" height="32"><span>Question</span></div><div class="cbody"><b>Voice or video calls?</b><br>Not yet. Text, pictures, files, nudges and winks for now.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="badges"><span class="badge">Best viewed at 1024&times;768</span><span class="badge">100% ad-free</span><span class="badge">Made with <img src="emo/heart.png" alt="love" width="12" height="12"></span></div>
+    <p>MyDSM is a free, non-profit project.</p>
+    <p class="credits">Emoticons: <a href="https://p.yusukekamiyamane.com/">Fugue Icons</a> &copy; Yusuke Kamiyamane, used under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a> (32&nbsp;px versions from <a href="https://github.com/chrisjbillington/fugue-2x-icons">fugue-2x-icons</a>).</p>
+  </div>
+</footer>
+</body>
+</html>
